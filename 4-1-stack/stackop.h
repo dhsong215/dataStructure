@@ -1,7 +1,6 @@
 #ifndef STACKOP_H
 #define STACKOP_H
 
-#include <stdlib.h>
 #define MAX_STACK 100
 
 typedef enum { false, true } bool;
