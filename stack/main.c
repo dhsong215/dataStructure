@@ -88,9 +88,9 @@ int evalPostfix(char* exp, int len) {
 }
 
 
-  int comPriority(char op1, char op2) {
-    return 0;
-  }
+int comPriority(char op1, char op2) {
+  return 0;
+}
 
 // infix수식 -> postfix수식
 void convInfixToPostfix(char* exp, char* convExp, int len) {
