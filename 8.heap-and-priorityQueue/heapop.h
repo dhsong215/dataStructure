@@ -11,9 +11,10 @@ typedef struct
     int priority;
 } HNode;
 
+// items는 index 1부터 시작 index 0은 빈거.
 typedef struct {
-    HNode items[MAX_HEAP + 1];
-    int num;
+    HNode items[MAX_HEAP + 1]; // HNode 담는 배열
+    int num; // items 수
 } Heap;
 
 // heap control
