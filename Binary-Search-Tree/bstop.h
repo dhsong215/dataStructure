@@ -1,6 +1,9 @@
 #ifndef BSTOP_H
 #define BSTOP_H
 
+#define INT_MIN 0
+#define INT_MAX 100
+
 typedef int Key;
 
 typedef struct _BSTNode
@@ -16,7 +19,7 @@ BSTNode* CreateNode(Key key);
 void DestroyNode(BSTNode *node);
 
 // 재귀, 서브트리 왼쪽 오른쪽 확인하며 bst인지 확인
-bool Verify(BSTNode *root);
+bool Verify(BSTNode *root, int min, int max);
 // bst에서 대상 node(root)검색
 BSTNode* Search(BSTNode* root, Key key);
 // node(root)삽입
