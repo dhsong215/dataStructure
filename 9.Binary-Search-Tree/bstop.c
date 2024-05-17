@@ -55,7 +55,7 @@ BSTNode* SearchIterative(BSTNode* root, Key key) {
     return cur;
 }
 
-// node(root)삽입
+// node(root)삽입 재귀 버전
 void Insert(BSTNode* root, Key key) {
     if (root->key == key) exit(1); // bst에 같은값 존재 안함
     // 대상이 key보다 크면 왼쪽으로
@@ -74,7 +74,7 @@ void Insert(BSTNode* root, Key key) {
     }
 }
 
-// node(root)삭제
+// node(root)삭제 반복문 버전
 BSTNode* Remove(BSTNode* root, Key key) {
     BSTNode* cur = root, *parent = NULL;
 
